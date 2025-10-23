@@ -443,3 +443,151 @@ flex-direction: column; /* stack contents vertically */
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ===== Top Company Registered Section ===== */
+.top-registered {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 10px 0 16px;
+}
+
+.tr-header-left h2 {
+  font-size: 1.2rem;
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.tr-subtitle {
+  color: #6b7280; /* gray-500 */
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.tr-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6a5af9, #5d3dfd);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(93, 61, 253, 0.3);
+}
+
+.tr-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.company-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.badge-internship { background: #eef2ff; color: #4f46e5; }
+.badge-fulltime { background: #ecfeff; color: #0891b2; }
+.badge-remote { background: #ecfccb; color: #3f6212; }
+
+.fav-btn {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.company-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.company-info h3 {
+  margin: 2px 0 2px;
+  font-size: 1rem;
+}
+
+.company-info p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.tr-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.rating { color: #f59e0b; }
+.rating .fa-regular { color: #d1d5db; }
+
+.tags { display: flex; gap: 6px; }
+.tags span {
+  background: #f3f4f6;
+  color: #4b5563;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* Responsive for Top Registered */
+@media (max-width: 1024px) {
+  .tr-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .tr-header { flex-direction: column; align-items: flex-start; }
+  .tr-actions { width: 100%; justify-content: space-between; }
+  .tr-grid { grid-template-columns: repeat(1, 1fr); gap: 14px; }
+  .company-card { padding: 16px; }
+}
