@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="homepage.css">
+
+  <title>Responsive Navbar (Custom CSS)</title>
+
+  
+</head>
+
+<body>
+
+  <nav>
+    <!-- Logo -->
+    <div class="logo">
+      
+      <span>PartTimePal</span>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <button class="menu-btn" id="menu-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Links -->
+    <div class="nav-links" id="menu">
+      <a href="#">Home</a>
+      <a href="#">System</a>
+      <a href="#">About</a>
+      <a href="#" class="active">Resources</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+    <!-- Search Section -->
+  <section class="search-section">
+    <h1>
+  Find Your
+  <span class="highlight-wrapper">
+    <span class="highlight" id="typing"></span>
+  </span>
+</h1>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search for part-time jobs...">
+      <button><i class="fa fa-search"></i></button>
+    </div>
+  </section>
+
+  
+
+<section class="job-section">
+  <div class="job-header">
+    <h2>Popular Jobs</h2>
+    <a href="#" class="see-all">See All</a>
+  </div>
+
+  <div class="job-carousel">
+    <div class="job-card">
+      <div class="job-header-info">
+        <img src="images/microsoft.webp" alt="Microsoft Logo" class="company-logo">
+        <h3>Graphic Designer</h3>
+      </div>
+      <p>Microsoft • Washington, USA</p>
+      <p class="job-detail">Create visual concepts and digital assets for campaigns and products.</p>
+      <span class="salary">$200/m</span>
+      <div class="job-tags">
+        <span>Full Time</span>
+        <span>Remote</span>
+        <span>Entry Level</span>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-header-info">
+        <img src="images/react.png" alt="Apple Logo" class="company-logo">
+        <h3>React Developer</h3>
+      </div>
+      <p>Apple • New York, USA</p>
+      <p class="job-detail">Develop and maintain front-end interfaces using React.js and modern frameworks.</p>
+      <span class="salary">$210/m</span>
+      <div class="job-tags">
+        <span>Full Time</span>
+        <span>Onsite</span>
+        <span>Mid Level</span>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-header-info">
+        <img src="images/UI.png" alt="Google Logo" class="company-logo">
+        <h3>UI/UX Designer</h3>
+      </div>
+      <p>Google • California, USA</p>
+      <p class="job-detail">Design user-centered interfaces and improve digital product experiences.</p>
+      <span class="salary">$250/m</span>
+      <div class="job-tags">
+        <span>Full Time</span>
+        <span>Remote</span>
+        <span>Senior</span>
+      </div>
+    </div>
+    <div class="job-card">
+      <div class="job-header-info">
+        <img src="images/UI.png" alt="Google Logo" class="company-logo">
+        <h3>UI/UX Designer</h3>
+      </div>
+      <p>Google • California, USA</p>
+      <p class="job-detail">Design user-centered interfaces and improve digital product experiences.</p>
+      <span class="salary">$250/m</span>
+      <div class="job-tags">
+        <span>Full Time</span>
+        <span>Remote</span>
+        <span>Senior</span>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="job-header">
+    <h2>Recent Jobs</h2>
+    <a href="#" class="see-all">See All</a>
+  </div>
+
+  <div class="job-carousel">
+    <div class="job-card">
+      <div class="job-header-info">
+        <img src="images/project.png" alt="Slack Logo" class="company-logo">
+        <h3>Project Manager</h3>
+      </div>
+      <p>Slack • California, USA</p>
+      <p class="job-detail">Lead project teams, coordinate timelines, and ensure successful product delivery.</p>
+      <span class="salary">$220/m</span>
+      <div class="job-tags">
+        <span>Full Time</span>
+        <span>Remote</span>
+        <span>Director</span>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-header-info">
+        <img src="images/frontend.png" alt="Notion Logo" class="company-logo">
+        <h3>Frontend Developer</h3>
+      </div>
+      <p>Notion • Texas, USA</p>
+      <p class="job-detail">Build responsive and dynamic user interfaces across multiple browsers.</p>
+      <span class="salary">$180/m</span>
+      <div class="job-tags">
+        <span>Contract</span>
+        <span>Hybrid</span>
+        <span>Junior</span>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-header-info">
+        <img src="images/web.png" alt="Notion Logo" class="company-logo">
+        <h3>Web Developer</h3>
+      </div>
+      <p>Notion • Texas, USA</p>
+      <p class="job-detail">Develop, test, and deploy websites with clean and efficient code.</p>
+      <span class="salary">$200/m</span>
+      <div class="job-tags">
+        <span>Contract</span>
+        <span>Hybrid</span>
+        <span>Entry Level</span>
+      </div>
+    </div>
+    <div class="job-card">
+      <div class="job-header-info">
+        <img src="images/frontend.png" alt="Notion Logo" class="company-logo">
+        <h3>Web Developer</h3>
+      </div>
+      <p>Notion • Texas, USA</p>
+      <p class="job-detail">Develop, test, and deploy websites with clean and efficient code.</p>
+      <span class="salary">$200/m</span>
+      <div class="job-tags">
+        <span>Contract</span>
+        <span>Hybrid</span>
+        <span>Entry Level</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+ </script>
+<script>
+const word = 'PartTimePal';
+let currentIndex = 0;
+let isDeleting = false;
+
+function typeWriterEffect() {
+  const element = document.getElementById('typing');
+
+  if (!isDeleting && currentIndex <= word.length) {
+    element.innerText = word.substring(0, currentIndex);
+    currentIndex++;
+    if (currentIndex > word.length) {
+      isDeleting = true;
+      setTimeout(typeWriterEffect, 1000); // pause at end
+      return;
+    }
+  } else if (isDeleting && currentIndex >= 0) {
+    element.innerText = word.substring(0, currentIndex);
+    currentIndex--;
+    if (currentIndex === 0) {
+      isDeleting = false;
+      setTimeout(typeWriterEffect, 500); // pause at start
+      return;
+    }
+  }
+
+  setTimeout(typeWriterEffect, 200); // typing speed
+}
+
+typeWriterEffect();
+</script>
+
+</body>
+</html>
